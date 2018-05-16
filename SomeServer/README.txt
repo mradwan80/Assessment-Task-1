@@ -15,6 +15,10 @@ g++ -std=c++11 -g -I"(aws-sdk-cpp folder)/aws-cpp-sdk-core/include" -I"(aws-sdk-
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:(restbed folder)/distribution/library:(aws-sdk-cpp build folder)/aws-cpp-sdk-core:(aws-sdk-cpp build folder)/aws-cpp-sdk-s3:(json build folder)/debug/src/lib_json
 
+and, in addition to the dependencies, other libararies need to be installed:
+
+sudo apt-get install libcurl4-openssl-dev libssl-dev uuid-dev zlib1g-dev libpulse-dev
+
 3-for windows, add the following preprocessor definitions: USE_IMPORT_EXPORT;USE_WINDOWS_DLL_SEMANTICS;
 
 ---------
