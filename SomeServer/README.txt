@@ -16,3 +16,14 @@ g++ -std=c++11 -g -I"(aws-sdk-cpp folder)/aws-cpp-sdk-core/include" -I"(aws-sdk-
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:(restbed folder)/distribution/library:(aws-sdk-cpp build folder)/aws-cpp-sdk-core:(aws-sdk-cpp build folder)/aws-cpp-sdk-s3:(json build folder)/debug/src/lib_json
 
 3-for windows, add the following preprocessor definitions: USE_IMPORT_EXPORT;USE_WINDOWS_DLL_SEMANTICS;
+
+---------
+
+For unit tests with google test on windows:
+
+1-download the google test library https://github.com/google/googletest
+
+2-create a win32 static library, with no precompiled header. Add gtest_main.cpp and gtest_all.cpp (from the google test library) to it.
+
+3-create a new console project. Add the static library and server projects as references. Add the test cpp file.
+
