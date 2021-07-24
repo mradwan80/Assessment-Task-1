@@ -1,5 +1,5 @@
 # Assessment-Task-1
-This repo contains a solution to a task I asked to finish for an interview in 2018.
+This repo contains a solution to a task I was asked to do for an interview in 2018.
 
 
 The task:
